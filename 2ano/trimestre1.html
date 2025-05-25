@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2° Ano - 1° Trimestre</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
   <header>
-    <h1>Relatório de Matemática</h1>
+    <h1>Portifólio de Matemática</h1>
     <p>2° Ano - 1° Trimestre</p>
   </header>
   <nav>
@@ -39,30 +41,156 @@
         <a href="#matrizes">Matrizes</a>
         <a href="#determinantes">Determinantes</a>
       </div>
+
       <h2 id="estatistica">Estatística Básica</h2>
-      <p>Estatística básica envolve o estudo de coleta, organização, análise e interpretação de dados. Os principais conceitos incluem:</p>
-      <ul>
-        <li>Média, mediana e moda</li>
-        <li>Desvio padrão e variância</li>
-        <li>Distribuições de frequência</li>
-      </ul>
-      <p>Exemplo: Para os dados {4, 6, 8, 10, 12}, a média é (4+6+8+10+12)/5 = 8.</p>
+      <h3>Amplitude Total</h3>
+      <p>Se calcula fazendo a diferença entre o maior e o menor valor da série de dados</p>
+      <p><strong>Exemplo:</strong> Dados: 7, 5, 3 → Amplitude Total = 7-3=4</p>
+
+      <h3>Desvio Médio</h3>
+      <p>É a média da diferença entre cada elemento da série e a média dos elementos, é sempre positivo(entre módulos).
+      </p>
+      <p><strong>Exemplo:</strong> Dados: 7, 5, 3 → Média = 15/3 = 5 DM = ( |7-5| + |5-5| + |3-5| ) /3 = (2 + 0 + 2)/3 =
+        1,333...</p>
+
+      <h3>Média Aritmética</h3>
+      <p>Obtida somando todos os valores de um conjunto de dados e dividindo pelo número total de elementos.</p>
+      <p><strong>Exemplo:</strong> Dados: 5, 7, 8, 10, 10 → Média = (5 + 7 + 8 + 10 + 10) / 5 = 8</p>
+
+      <h3>Mediana</h3>
+      <p>É o valor central de um conjunto ORDENADO de forma crescente ou decrescente de números. Se houver número par de
+        elementos, se faz a média aritmética dos dois centrais.</p>
+      <p><strong>Exemplo:</strong> Dados: 1, 3, 5, 7, 9 → Mediana = 5</p>
+      <p>Dados: 1, 3, 5, 7 → Mediana = (3 + 5)/2 = 4</p>
+
+      <h3>Moda</h3>
+      <p>A moda vai ser o número que mais se repete no conjunto.</p>
+      <p><strong>Exemplo:</strong> Dados: 2, 4, 4, 6, 8 → Moda = 4</p>
+
+      <h3>Variância</h3>
+      <p>Indica o grau de dispersão em relação à média, o resultado sai elevado ao quadrado.</p>
+      <p><strong>Fórmula:</strong> Var(X) = Σ(xᵢ - μ)² / n</p>
+      <p>Esta fórmula significa que a variância é calculada somando(Σ) os quadrados da subtração entre os termos e a
+        média(aritmética ou ponderada)</p>
+      <p><strong>Exemplo:</strong> Dados: 2, 4, 6, 8 → Média = 5 → Var(X) = [(2-5)² + (4-5)² + (6-5)² + (8-5)²]/4 = 5
+      </p>
+
+      <h3>Desvio Padrão(DP)</h3>
+      <p>É calculado apartir da raiz quadrada da variância. Demonstra o quão dispersos os valores são.</p>
+      <p><strong>Exemplo:</strong> Desvio padrão = √5 ≈ 2,24</p>
+      <p>Os valores: 2, 4, 6, 8, variam em média 2,24</p>
+
+      <h3>Coeficiente de Variação(CV)</h3>
+      <p>Usado para comparar grupos de dados de diferente natureza ou que tenham média diferente, o resultado sai em
+        porcentagem. </p>
+      <p><strong>Fórmula:</strong> CV = Desvio Padrão /Média * 100</p>
+
+      <h3>Distribuições de Frequência</h3>
+      <p>Organizam os dados em classes com as respectivas frequências.</p>
+      <table border="1" cellpadding="5">
+        <tr>
+          <th>Altura(cm)</th>
+          <th>Atletas</th>
+        </tr>
+        <tr>
+          <td>1,60 - 1,70</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>1,70 - 1,80</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>1,80 - 1,90</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td> Total </td>
+          <td>100</td>
+        </tr>
+      </table>
+      <p>Nesse caso será usado com média ponderada, segue o exemplo abaixo com cálculos possíveis.</p>
+      <img src="a.jpeg" width="700">
+
       <h2 id="matrizes">Matrizes</h2>
-      <p>As matrizes são tabelas organizadas em linhas e colunas. Elas podem ser somadas, subtraídas, multiplicadas entre si ou por escalar.</p>
+      <p>Uma matriz é uma tabela de números dispostos em linhas e colunas. Operações básicas incluem:</p>
+      <ul>
+        <li><strong>Adição/Subtração:</strong></li>
+        <p>A adição e subtração se dá normalmente, somando os termos das respectivas posições em metrizes de mesma ordem
+        </p>
+        <p>E a subtração se dá pelo mesmo processo</p>
+      </ul>
+      <p><strong>Exemplo:</strong></p>
+      <img src="b.jpeg" width="700">
+
+      <ul>
+        <li><strong>Multiplicação por escalar:</strong></li>
+        <p>A multiplicação escalar é quando multiplica-se a matriz por um número qualquer</p>
+      </ul>
+      <p><strong>Exemplo:</strong></p>
       <pre>
-        | 1  2 |
-        | 3  4 |
+5 * |0 1 -2| = |0 5 -10|
+    |1 4 -1|   |5 20 -5|
+        </pre>
+      <ul>
+        <li><strong>Multiplicação de matrizes:</strong></li>
+        <p>Para a multiplicação entre matrizes existe uma regra em que uma matriz só pode ser multiplicada por outra se
+          a primeira matriz tiver um número de colunas igual ao número de linhas da segunda matriz. Nesse caso a ordem
+          da multiplicação importa pois o cálculo é feito multiplicando as colunas da primeira com as linhas da segunda
+          matriz.</p>
+      </ul>
+      <p><strong>Exemplo:</strong></p>
+      <pre>
+A = |1 2|      B = |5 6|
+    |3 4|,         |7 8|
+    
+A×B = |(1×5+2×7) (1×6+2×8)|   |19 22|
+      |(3×5+4×7) (3×6+4×8)| = |43 50|
+
       </pre>
-      <p>Multiplicação de matrizes exige compatibilidade de dimensões. Equações matriciais como AX = B podem ser resolvidas usando a inversa de A, quando possível.</p>
+      <img src="c.jpeg" width="750" height="400">
+
+      <ul>
+        <li><strong>Transposição de Matrizes</strong></li>
+        <p>A transposição de matrizes é a matriz com as linhas e colunas invertidas, a transposição de uma matriz
+          transposta é a matriz normal.</p>
+        <p>É feita da seguinda maneira</p>
+      </ul>
+      <pre>
+        A = |1 4|   |1 2 3|
+            |2 5| → |4 5 6|
+            |3 6|
+      </pre>
+
       <h2 id="determinantes">Determinantes</h2>
-      <p>O determinante de uma matriz quadrada é um número que pode ser usado para resolver sistemas lineares e verificar se uma matriz é invertível.</p>
+      <p>Determinantes só são possíveis de calcular em matrizes quadradas</p>
+      <h3>Ordem 2x2</h3>
+      <p>Em matrizes de ordem 2 por 2 o determinante é calculado fazendo a diferença entre a multiplicação da diagonal
+        principal com a diagonal secundária. </p>
+      <p></p>
       <pre>
-        |a  b|
-        |c  d|  → determinante = ad - bc
+|a b|
+|c d| → det = a*d - b*c
       </pre>
-      <p>Se o determinante for 0, a matriz não possui inversa.</p>
-      <h1>Patati</h1>
+      <p><strong>Exemplo:</strong></p>
+      <pre>
+|1 2| → det = 1×4 - 2×3 = -2
+|3 4|
+      </pre>
+      <h3>Ordem 3x3</h3>
+      <p>Utiliza-se a <strong>Regra de Sarrus</strong>:</p>
+      <p><strong>Exemplo:</strong></p>
+      <img src="e.png" width="500" height="100">
+      <img src="d.png" width="500" height="150"><p>Retirado de <a href="https://brasilescola.uol.com.br/matematica/determinantes-1.htm" target="_blank">BrasilEscola -Determinantes</a></p>
+
+      <h3>Ordem 4x4</h3>
+      <p>Para fazer o calculo do determinante de uma matriz 4X4, o primeiro termo deve ser igual à 1</p>
+      <p><p>Exige cálculo de determinantes de submatrizes 3x3.</p></p>
+      <p>Apartir disso você faz esse cálculo</p>
+      <img src="f.jpeg" width="700">
+
     </section>
   </main>
 </body>
+
 </html>
