@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2° Ano - 2° Trimestre</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Portfólio de Matemática</h1>
+    <p>2° Ano - 2° Trimestre</p>
+  </header>
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">1° Ano</a>
+        <ul class="submenu">
+          <li><a href="https://www.canva.com/design/DAGEqXq1U_4/0YqvFjvTeyGA4FhL4n6B9Q/edit?utm_content=DAGEqXq1U_4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">1° Trimestre</a></li>
+          <li><a href="https://www.canva.com/design/DAGS-d11sCk/Y9DNpRyLjmat1J38TLtfRQ/edit?utm_content=DAGS-d11sCk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">2° Trimestre</a></li>
+          <li><a href="https://www.canva.com/design/DAGbjMryv24/pwXcr4jFSPVIlSfbmvH5tg/edit?utm_content=DAGbjMryv24&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">3° Trimestre</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">2° Ano</a>
+        <ul class="submenu">
+          <li><a href="trimestre1.html">1° Trimestre</a></li>
+          <li><a href="trimestre2.html">2° Trimestre</a></li>
+          <li><a href="#">3° Trimestre</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">3° Ano</a>
+        <ul class="submenu">
+          <li><a href="#">1° Trimestre</a></li>
+          <li><a href="#">2° Trimestre</a></li>
+          <li><a href="#">3° Trimestre</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+        <h2>Sumário</h2>
+        <div class="toc">
+            <a href="#SLinear">Sistemas Lineares</a>
+            <a href="#Matrizes">Matrizes</a>
+            <a href="#Trigo">Trigonometria</a>
+            <a href="#Avaliacao">Auto Avaliação</a>
+        </div>
+        
+        <h2 id="SLinear">Sistemas Lineares</h2>
+        <h3>Equações Lineares</h3>
+        <p>São equações em que todas as incógnitas têm expoente 1 e aparecem de forma simples. Não podem existir termos como <i>x²</i>, <i>xy</i>, etc.</p>
+        <p><b>Modelo geral:</b> a₁x₁ + a₂x₂ + ... + aₙxₙ + b = 0</p>
+        <p><b>Exemplos de equações lineares:</b> 2x + 4y - z = 4 &nbsp&nbsp&nbsp -3p + 4q - 1 = 0</p>
+        <p><b>Não lineares:</b> 3x² - 4x + 5 = 0 ; 2x + 3y³ = 2</p>
+
+        <h3>Sistemas Lineares</h3>
+        <p>Um sistema linear é um conjunto de equações lineares com as mesmas incógnitas.</p>
+        <p><b>Exemplo 2x2:</b></p>
+        <pre>
+2x + 3y = 19
+x - y = -3
+        </pre>
+        <p><b>Exemplo 3x3:</b></p>
+        <pre>
+x + y + z = 6
+2x - y + z = 3
+x - y - 2z = -7
+        </pre>
+        <p>Classificação:</p>
+        <ul>
+          <li><b>SPD</b> (Sistema Possível e Determinado) → 1 solução</li>
+          <li><b>SPI</b> (Sistema Possível e Indeterminado) → infinitas soluções</li>
+          <li><b>SI</b> (Sistema Impossível) → nenhuma solução</li>
+        </ul>
+
+        <h3>Sistemas Lineares 2X2</h3>
+        <p>A solução de um sistema 2x2 é o ponto de intersecção das retas representadas pelas equações.</p>
+        <p><b>Exemplo:</b></p>
+        <pre>
+2x + 3y = 19
+x - y = -3  →  Solução: (x, y) = (2, 5)
+
+x = -3 + y        2(-3 + y) + 3y = 19     -6 + 2y + 3y = 19    5y = 19 + 6     y =25/5  y= 5 
+x = -3 + 5        x = 2
+        </pre>
+        <p>Possibilidades de representações gráficas:</p>
+        <ul>
+          <li>Retas concorrentes(se encontram em um ponto) → SPD</li>
+          <li>Retas coincidentes(uma sobre a outra) → SPI</li>
+          <li>Retas paralelas(não tocam) → SI</li>
+        </ul>
+
+        <h3>Sistemas Lineares 3X3</h3>
+        <p>Um sistema 3x3 possui três equações e três incógnitas. Cada equação representa um plano no espaço em uma representação gráfica.</p>
+        <p><b>Exemplo:</b></p>
+        <pre>
+x + y + z = 6
+2x - y + z = 3
+x - y - 2z = -7
+        </pre>
+        <p>As soluções representam pontos de interseção entre planos. Pode haver 1 ponto (SPD), infinitos pontos (SPI) ou nenhum (SI).</p>
+
+        <h3>Relação entre Sistemas e Matrizes</h3>
+        <p>Um sistema pode ser escrito como matriz, equação matricial <b>A·X = B</b>.</p>
+        <p><b>Exemplo:</b></p>
+        <pre>
+Sistema:  2x + 3y = 19
+          x - y = -3
+
+Forma matricial:
+|2  3| |x| = |19|
+|1 -1| |y|   |-3|
+
+<img src="g1.jpeg" width="700">
+        </pre>
+        <p>O determinante da matriz dos coeficientes indica o tipo de solução:</p>
+        <ul>
+          <li>det ≠ 0 → SPD</li>
+          <li>det = 0 → SPI ou SI</li>
+        </ul>
+
+        <h3>Método da Substituição/Adição</h3>
+        <p><b>Exemplo Substituição:</b></p>
+        <pre>
+x + y = 10 → y = 10 - x
+2x - 3y + z = 3 → 2x - 3(10 - x) + z = 3 → z = 3 - 5x + 30
+        </pre>
+
+        <h3>Método de Escalonamento</h3>
+        <p>Consiste em manipular as equações até obter forma escalonada (com zeros abaixo da diagonal principal).</p>
+        <p><b>Exemplo:</b></p>
+        <pre>
+Sistema original:
+4x - 3y + z = 3
+3x + y + 4z = -1
+5x - 2y + 3z = 2
+
+Após escalonamento:
+4x - 3y + z = 3
+    3y + 2z = -2
+         -z = -2              z = 2, y = -2, x = -1,25
+        </pre>
+
+        <h2 id="Matrizes">Matrizes e Criptografia</h2>
+        <h3>Matrizes Inversas</h3>
+        <ul><li><h4>De ordem 2 usando sistemas</h4></li></ul>
+        <p>Resolve-se o sistema A·X = I, onde I é a matriz identidade. A solução X será A⁻¹.</p>
+
+        <ul><li><h4>De ordem 3 usando sistemas</h4></li></ul>
+        <p>Segue a mesma lógica, mas envolvendo sistemas maiores. O produto A·A⁻¹ = I deve ser satisfeito.</p>
+
+        <ul><li><h4>De ordem 2 usando determinantes - Regra Prática</h4></li></ul>
+        <p><b>Passos:</b></p>
+        <ol>
+          <li>Calcular o determinante da matriz</li>
+          <li>Dividir todos os termos da matriz pelo determinante</li>
+          <li>Trocar sinal dos da diagonal secundária, multiplicar por -1</li>
+          <li>Trocar os elementos da diagonal principal de posição</li>
+        </ol>
+
+        <ul><li><h4>De ordem 3 usando determinantes - Regra Prática</h4></li></ul>
+        <p><b>Método prático para a inversa de matrizes de ordem 3</b></p>
+        <ol>
+
+        <li>Calcular o determinante da Matriz</li>
+        <li>Repetir as duas primeiras colunas da matriz a direita e repetir as duas primeiras linhas embaixo, ficando 5X5</li>
+        <li>Cancelar a primeira linha e a primeira coluna</li>
+        <li>Realizar vários determinantes 2X2 dentro da matriz</li>
+        <li>Montar uma matriz 3X3 apartir dos determinantes</li>
+        <li>Dividir todos os elementos pelo determinante</li></ol>
+
+        <img src="h.png" width="700">
+        <p>Retirado dos arquivos no sigaa</p>
+
+        <h3>Criptografia</h3>
+        <p>Como codificar uma mensagem por pares de símbolos, usando uma matriz de codificação e sua
+inversa (decodificação). A operação é por multiplicação de matrizes.</p>
+
+
+<h4>Tabela de conversão (30 símbolos)</h4>
+<div style="overflow-x:auto">
+<table class="tabela-cripto">
+<thead>
+<tr>
+<th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+</tr>
+</tbody>
+</table>
+<table class="tabela-cripto" style="margin-top:.5rem">
+<thead>
+<tr>
+<th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th><th>.</th><th>,</th><th>_</th><th>¬</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Fórmulas importantes: </p>
+<p>Matriz criptografada = Matriz Inventada * A Matriz</p>
+<p>Descriptografar: Matriz Inventada →  Matriz inversa → Matriz inversa * Matiz criptografada → Matriz original</p>
+<h4>Exemplo completo — codificação por matrizes</h4>
+<p>Matriz codificadora e sua inversa det=1:</p>
+<pre>
+A = |5 7| A^{-1} = | 3 -7|
+    |2 3|          | -2 5|
+</pre>
+<p><b>Mensagem:</b> "OS NÚMEROS GOVERNAM O MUNDO."</p>
+<p>Convertendo símbolos em números e organizando em matriz 2×n (por colunas):</p>
+<pre>
+M = [ 15 19 29 14 21 13 5 18 15 19 29 7 15 22 ]
+    [ 5 18 14 1 13 29 15 29 13 21 14 4 15 27 ]
+</pre>
+<p>Codificação: </p>
+<pre>
+N = [ 110 221 243 77 196 268 130 293 166 242 243 63 180 299 ]
+    [ 45 92 100 31 81 113 55 123 69 101 100 26 75 125 ]
+</pre>
+<p><b>Mensagem codificada:</b> 110, 221, 243, 77, 196, 268, 130, 293, 166, 242, 243, 63, 180, 299, 45,
+92, 100, 31, 81, 113, 55, 123, 69, 101, 100, 26, 75, 125.</p>
+
+
+        <h2 id="Trigo">Trigonometria nos Triângulos</h2>
+        <h3>Teorema de Pitágoras</h3>
+        <p>Em todo triângulo retângulo: a² = b² + c² (com a hipotenusa e b, c catetos).</p>
+        <p><b>Exemplo:</b> Se b=3 e c=4 → a² = 9+16=25 → a=5</p>
+
+        <h3>Seno, Cosseno e Tangente</h3>
+        <p>Definições em relação a um ângulo θ em triângulo retângulo:</p>
+        <ul>
+          <li>sen θ = cateto oposto / hipotenusa = CO/h</li>
+          <li>cos θ = cateto adjacente / hipotenusa = CA/h</li>
+          <li>tg θ = cateto oposto / cateto adjacente = CO/CA</li>
+        </ul>
+        <p>Todos os ângulos entre 1 e 90 graus possuem seno, cosseno e tangente fixo, alguns são mais importantes como o do 30, 45 e 60.</p>
+        <h3>Tabela de ângulos</h3>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center;">
+<thead>
+<tr>
+<th>Ângulo</th>
+<th>sen θ</th>
+<th>cos θ</th>
+<th>tg θ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30°</td>
+<td>1/2</td>
+<td>√3/2</td>
+<td>√3/3</td>
+</tr>
+<tr>
+<td>45°</td>
+<td>√2/2</td>
+<td>√2/2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>60°</td>
+<td>√3/2</td>
+<td>1/2</td>
+<td>√3</td>
+</tr>
+</tbody>
+</table>
+        <h4>Cossecante, Secante e Cotangente</h4>
+        <p>Cossecante, secante e cotangente são o contrário das operações de seno, cosseno e tangente</p>
+        <ul>
+          <li>cossec θ = h/CO</li>
+          <li>sec θ = h/CA</li>
+          <li>cotg θ = CA/CO </li>
+        </ul>
+
+        <h4>Exemplo</h4>
+        <p>Num triângulo retângulo com hipotenusa 10 e cateto oposto em relação ao ângulo 6: </p>
+        <p> CO<sup>2</sup> + 6<sup>2</sup> = 10<sup>2</sup></p>
+        <p>100 - 36 = CO² &nbsp&nbsp&nbsp&nbsp CO = √64&nbsp&nbsp&nbsp CO = 8</p>
+        <p> θ = 6/10 = 0,6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp cos θ = 8/10 = 0,8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp tg θ = 6/8 = 0,75</p>
+
+        <img src="h1.jpeg" width="700">
+        <h2 id="Avaliacao">Avaliação</h2>
+        <p>Acho que esse portfólio não ficou muito bom, os conteúdos até não são tão difíceis mas eu tive que arranjar o tempo com outras matérias o que acabou comprometendo meu desempenho nesse 2º trimestre. As atividades que foram feitas também foram bem interessantes, já tive contato com teorema de pitágoras no 8º ano mas aí não tinha números fracionados ou raiz no cálculo era um pouco mais fácil. Esse trabalho também teve muita influência dos arquivos no sigaa.</p>
+    </section>
+  </main>
+</body>
+
+</html>
