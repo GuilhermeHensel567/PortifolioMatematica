@@ -64,8 +64,8 @@
         <p>a/senA = b/senB = c/senC</p>
         <img src="https://static.todamateria.com.br/upload/1l/ei/1_lei_dos_senos_vcc.jpg"> Retirado de <a href="https://www.todamateria.com.br/lei-dos-senos/">Toda Matéria</a>
         <pre>
-  a     =  b  =  c
-sen(â)   sen(^B)
+  a    =  b    =    c
+sen(A)   sen(B)  sen(C)
         </pre>
 
         <h3>Lei dos Cossenos</h3>
@@ -79,92 +79,82 @@ sen(â)   sen(^B)
     
 
         <h2 id="Matrizes">Arcos de Circunferência</h2>
-        <h3>Matrizes Inversas</h3>
-        <ul><li><h4>De ordem 2 usando sistemas</h4></li></ul>
-        <p>Resolve-se o sistema A·X = I, onde I é a matriz identidade. A solução X será A⁻¹.</p>
+        <h3>Definições</h3>
+        <p> A Circunferência é o perímetro de um círculo e um arco é um trecho da circunferência delimitado por dois pontos.</p>
+        <p>Para cada arco podemos associar duas medidas:</p>
+      <ol>
+        <li>Comprimento do arco(medida linear)</li>
+        <li>Ângulo, formado por dois raios(medida angular)</li>
+      </ol>
+        <img src="e.png"> Arquivo do Sigaa
 
-        <ul><li><h4>De ordem 3 usando sistemas</h4></li></ul>
-        <p>Segue a mesma lógica, mas envolvendo sistemas maiores. O produto A·A⁻¹ = I deve ser satisfeito.</p>
+        <p>Considere a figura e as conclusões</p>
+        <img src="e.png"> Arquivo do Sigaa
+        <p> Analisando a figura vemos dois círculos compartilhando o mesmo ângulo, oque diferencia-los é o raio que é menor e portanto a circunferência e o arco são menores</p>
+        <p></p>
 
-        <ul><li><h4>De ordem 2 usando determinantes - Regra Prática</h4></li></ul>
-        <p><b>Passos:</b></p>
+
+        <h3>Comprimento e Ângulo de um Arco</h3>
+      <p>Como já vimos antes as duas medidas. O comprimento de um arco é sua medida linear e pode ser indicado emmilímetro, centímetro, metro etc. Se fosse possível retificar esse arco transformando-o em um segmento, conseguiríamos medi-lo com uma régua reta.</p>
+        <p>Fórmula da circunferência</p>
+      <pre>
+        c = 2πr     comprimento é igual a dois vezes PI(π) vezes o raio(r)
+      </pre>
+        <p>Além disso 2 vezes raio é o diâmetro então a fórmula pode ser reescrita assim</p>
+      <pre>
+        c= d*π
+      </pre>
+      <p>Temos que π é quantas vezes o perímetro(circunferência) é maior que o diâmetro. Chegamos as conclusões</p>
+      <pre>
+        π = p/d ou c/d       circunferência dividida pelo diâmetro
+
+        2πr  -  360°
+        L    -   â
+
+        2πr(uma volta) está para 360 graus assim como lado(comprimento do arco) está para o ângulo interno
+        
+        <h3>Grau e Radiano</h3>
+        <p>As unidades mais usadas para medir os ângulos dos arcos de circunferências são o grau e o radiano.</p>
+        <h4><b>Grau</b></h4>
+        <p>O grau(°) em matemática é a unidade de medida padrão para ângulos, sendo que uma circunferência completa corresponde a um ângulo de 360 graus. Ele é usado para quantificar a abertura ou a rotação.</p>
+        <pre>
+          1° =  60'   1 grau é 60 minutos
+          1' = 60"    1 minuto é 60 segundo
+          1° =  3600'  1 grau é 3600 segundos
+        </pre>
+        <h4><b>Radiano</b></h4>
+        <p>Radiano é um arco de circunferência com o mesmo valor do raio.</p>
+        <p>Assim, o comprimento de uma circunferência possui, aproximadamente, 6,28 vezes a medida do seu raio, ou seja, 6,28 radianos. A metade da circunferência mede, portanto, 3,14 radianos o mesm valor de π.</p>
+
+        <img src="circulo.gif"> Retirado de <a href="https://pt.wikipedia.org/wiki/Radiano#"></a>
+        <br>
+        <p>πrad = 180°</p>
+        <p>para converter rad para graus usamos essas relações</p>
+        <p>Digamos que eu quero descobrir quantos radianos são em 30°</p>
+        <pre>
+          π  -  180°
+          X  -   30°
+
+          30° =  π/6rad
+        </pre>
+        <img src="conversao.jpeg">
+
+        <h3>Trigonometria no ciclo</h3>
+        <p>A circunferência trigonométrica ou ciclo trigonométrico tem centro na origem O (0, 0) de um plano cartesiano e raio de 1 unidade. O eixo das abscissas
+e o eixo das ordenadas dividem o ciclo em quatro quadrantes. O ponto A (1, 0) é
+a origem de todos os arcos, ou seja, é o ponto a partir do qual percorremos à
+circunferência até um ponto P qualquer para determinar o arco 𝐴𝑃̂ (o ponto P é
+a extremidade do arco). </p>
+        <img src="3.png"> Arquivo do Sigaa
+        <p>Podemos movimentar esse ponto p em dois sentidos:</p>
         <ol>
-          <li>Calcular o determinante da matriz</li>
-          <li>Dividir todos os termos da matriz pelo determinante</li>
-          <li>Trocar sinal dos da diagonal secundária, multiplicar por -1</li>
-          <li>Trocar os elementos da diagonal principal de posição</li>
+          <li>sentido anti-horário consideramos o sentido positivo.</li>
+          <li>sentido horário consideramos o sentido negativo.</li>
         </ol>
 
-        <ul><li><h4>De ordem 3 usando determinantes - Regra Prática</h4></li></ul>
-        <p><b>Método prático para a inversa de matrizes de ordem 3</b></p>
-        <ol>
-
-        <li>Calcular o determinante da Matriz</li>
-        <li>Repetir as duas primeiras colunas da matriz a direita e repetir as duas primeiras linhas embaixo, ficando 5X5</li>
-        <li>Cancelar a primeira linha e a primeira coluna</li>
-        <li>Realizar vários determinantes 2X2 dentro da matriz</li>
-        <li>Montar uma matriz 3X3 apartir dos determinantes</li>
-        <li>Dividir todos os elementos pelo determinante</li></ol>
-
-        <img src="h.png" width="700">
-        <p>Retirado dos arquivos no sigaa</p>
-
-        <h3>Criptografia</h3>
-        <p>Como codificar uma mensagem por pares de símbolos, usando uma matriz de codificação e sua
-inversa (decodificação). A operação é por multiplicação de matrizes.</p>
-
-
-<h4>Tabela de conversão (30 símbolos)</h4>
-<div style="overflow-x:auto">
-<table class="tabela-cripto">
-<thead>
-<tr>
-<th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
-</tr>
-</tbody>
-</table>
-<table class="tabela-cripto" style="margin-top:.5rem">
-<thead>
-<tr>
-<th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th><th>.</th><th>,</th><th>_</th><th>¬</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<p>Fórmulas importantes: </p>
-<p>Matriz criptografada = Matriz Inventada * A Matriz</p>
-<p>Descriptografar: Matriz Inventada →  Matriz inversa → Matriz inversa * Matiz criptografada → Matriz original</p>
-<h4>Exemplo completo — codificação por matrizes</h4>
-<p>Matriz codificadora e sua inversa det=1:</p>
-<pre>
-A = |5 7| A^{-1} = | 3 -7|
-    |2 3|          | -2 5|
-</pre>
-<p><b>Mensagem:</b> "OS NÚMEROS GOVERNAM O MUNDO."</p>
-<p>Convertendo símbolos em números e organizando em matriz 2×n (por colunas):</p>
-<pre>
-M = [ 15 19 29 14 21 13 5 18 15 19 29 7 15 22 ]
-    [ 5 18 14 1 13 29 15 29 13 21 14 4 15 27 ]
-</pre>
-<p>Codificação: </p>
-<pre>
-N = [ 110 221 243 77 196 268 130 293 166 242 243 63 180 299 ]
-    [ 45 92 100 31 81 113 55 123 69 101 100 26 75 125 ]
-</pre>
-<p><b>Mensagem codificada:</b> 110, 221, 243, 77, 196, 268, 130, 293, 166, 242, 243, 63, 180, 299, 45,
-92, 100, 31, 81, 113, 55, 123, 69, 101, 100, 26, 75, 125.</p>
-
+        <h3>Arcos Côngruos</h3>
+        <p>São arcos que param no mesmo lugar exemplo:
+        <br> 270° é congruente de -90° pois os dois somados dão 360° ou um múltiplo inteiro de 360° e 270° é congurente de 630°</p>
 
         <h2 id="Trigo">Trigonometria nos Triângulos</h2>
         <h3>Teorema de Pitágoras</h3>
