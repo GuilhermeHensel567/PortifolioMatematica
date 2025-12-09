@@ -45,108 +45,40 @@
     <section>
         <h2>Sumário</h2>
         <div class="toc">
-            <a href="#SLinear">Sistemas Lineares</a>
-            <a href="#Matrizes">Matrizes</a>
-            <a href="#Trigo">Trigonometria</a>
+            <a href="#TrigoLeiSenCos">Trigonometria, Lei dos Senos e Cossenos</a><br>
+            <a href="#Matrizes">Arcos de circunferência</a><br>
+            <a href="#Trigo">Funções Trigonométricas</a><br>
             <a href="#Avaliacao">Auto Avaliação</a>
         </div>
         
-        <h2 id="SLinear">Sistemas Lineares</h2>
-        <h3>Equações Lineares</h3>
-        <p>São equações em que todas as incógnitas têm expoente 1 e aparecem de forma simples. Não podem existir termos como <i>x²</i>, <i>xy</i>, etc.</p>
-        <p><b>Modelo geral:</b> a₁x₁ + a₂x₂ + ... + aₙxₙ + b = 0</p>
-        <p><b>Exemplos de equações lineares:</b> 2x + 4y - z = 4 &nbsp&nbsp&nbsp -3p + 4q - 1 = 0</p>
-        <p><b>Não lineares:</b> 3x² - 4x + 5 = 0 ; 2x + 3y³ = 2</p>
-
-        <h3>Sistemas Lineares</h3>
-        <p>Um sistema linear é um conjunto de equações lineares com as mesmas incógnitas.</p>
-        <p><b>Exemplo 2x2:</b></p>
+        <h2 id="TrigoLeiSenCos">Trigonometria, Lei dos Senos e Cossenos</h2>
+        <h3>Trigonometria em qualquer triângulo</h3>
+        <p>As equações gerais que podem ser usadas para qualquer tipo de triângulo, seja ele retângulo, acutângulo ou obtusângulo</p>
+        <img src="https://static.preparaenem.com/2025/01/esquadro-ilustrando-texto-sobre-a-classificacao-de-triangulos.jpg">   Retirado de <a href="https://www.preparaenem.com/matematica/tipos-de-triangulos.htm">PreParaEnem</a>
+        <p>Para fazer a trigonometria encontrar qualquer lado e ângulo de um triângulo qualquer usamos Lei dos Senos e dos Cossenos</p>
+      
+        <h3>Lei dos Senos</h3>
+        <p>Para fazer a trigonometria usando senos.</p>
+        <p>A lei é o seguinte</p>
+        <p>Tendo um triângulo 3 lados, a, b, c e sendo os ângulos opostos aos lados respectivamente, A, B, C então a lei fica</p>
+        <p>a/senA = b/senB = c/senC</p>
+        <img src="https://static.todamateria.com.br/upload/1l/ei/1_lei_dos_senos_vcc.jpg"> Retirado de <a href="https://www.todamateria.com.br/lei-dos-senos/">Toda Matéria</a>
         <pre>
-2x + 3y = 19
-x - y = -3
-        </pre>
-        <p><b>Exemplo 3x3:</b></p>
-        <pre>
-x + y + z = 6
-2x - y + z = 3
-x - y - 2z = -7
-        </pre>
-        <p>Classificação:</p>
-        <ul>
-          <li><b>SPD</b> (Sistema Possível e Determinado) → 1 solução</li>
-          <li><b>SPI</b> (Sistema Possível e Indeterminado) → infinitas soluções</li>
-          <li><b>SI</b> (Sistema Impossível) → nenhuma solução</li>
-        </ul>
-
-        <h3>Sistemas Lineares 2X2</h3>
-        <p>A solução de um sistema 2x2 é o ponto de intersecção das retas representadas pelas equações.</p>
-        <p><b>Exemplo:</b></p>
-        <pre>
-2x + 3y = 19
-x - y = -3  →  Solução: (x, y) = (2, 5)
-
-x = -3 + y        2(-3 + y) + 3y = 19     -6 + 2y + 3y = 19    5y = 19 + 6     y =25/5  y= 5 
-x = -3 + 5        x = 2
-        </pre>
-        <p>Possibilidades de representações gráficas:</p>
-        <ul>
-          <li>Retas concorrentes(se encontram em um ponto) → SPD</li>
-          <li>Retas coincidentes(uma sobre a outra) → SPI</li>
-          <li>Retas paralelas(não tocam) → SI</li>
-        </ul>
-
-        <h3>Sistemas Lineares 3X3</h3>
-        <p>Um sistema 3x3 possui três equações e três incógnitas. Cada equação representa um plano no espaço em uma representação gráfica.</p>
-        <p><b>Exemplo:</b></p>
-        <pre>
-x + y + z = 6
-2x - y + z = 3
-x - y - 2z = -7
-        </pre>
-        <p>As soluções representam pontos de interseção entre planos. Pode haver 1 ponto (SPD), infinitos pontos (SPI) ou nenhum (SI).</p>
-
-        <h3>Relação entre Sistemas e Matrizes</h3>
-        <p>Um sistema pode ser escrito como matriz, equação matricial <b>A·X = B</b>.</p>
-        <p><b>Exemplo:</b></p>
-        <pre>
-Sistema:  2x + 3y = 19
-          x - y = -3
-
-Forma matricial:
-|2  3| |x| = |19|
-|1 -1| |y|   |-3|
-
-<img src="g1.jpeg" width="700">
-        </pre>
-        <p>O determinante da matriz dos coeficientes indica o tipo de solução:</p>
-        <ul>
-          <li>det ≠ 0 → SPD</li>
-          <li>det = 0 → SPI ou SI</li>
-        </ul>
-
-        <h3>Método da Substituição/Adição</h3>
-        <p><b>Exemplo Substituição:</b></p>
-        <pre>
-x + y = 10 → y = 10 - x
-2x - 3y + z = 3 → 2x - 3(10 - x) + z = 3 → z = 3 - 5x + 30
+  a     =  b  =  c
+sen(â)   sen(^B)
         </pre>
 
-        <h3>Método de Escalonamento</h3>
-        <p>Consiste em manipular as equações até obter forma escalonada (com zeros abaixo da diagonal principal).</p>
-        <p><b>Exemplo:</b></p>
-        <pre>
-Sistema original:
-4x - 3y + z = 3
-3x + y + 4z = -1
-5x - 2y + 3z = 2
+        <h3>Lei dos Cossenos</h3>
+        <p>Para fazer a trigonometria usando cossenos</p>
+        <p>A lei é o seguinte</p>
+        <p>Tendo os mesmos valores de lado e ângulo, lados a, b, c e ângulos A, B, C e digamos que eu quero descobrir o <b>a</b> então a lei é o seguinte</p>
+      <p>a² = b² + c² - 2b*c * cosA</p>
+      <img src="https://paperx-dex-assets.s3.sa-east-1.amazonaws.com/images/1606425138645-Dx1vvKw5Lp.png"> Retirado de<a href="https://dex.descomplica.com.br/enem/matematica/enem-intensivo-lei-dos-senos-e-dos-cossenos/explicacao/1">Link</a>
+      
+      <p>Como pode ver a lei dos cossenos se assemelha com o teorema de Pitágoras no começo a² = b² + c² e ela varia conforme quem você quer achar no triângulo</p>
+    
 
-Após escalonamento:
-4x - 3y + z = 3
-    3y + 2z = -2
-         -z = -2              z = 2, y = -2, x = -1,25
-        </pre>
-
-        <h2 id="Matrizes">Matrizes e Criptografia</h2>
+        <h2 id="Matrizes">Arcos de Circunferência</h2>
         <h3>Matrizes Inversas</h3>
         <ul><li><h4>De ordem 2 usando sistemas</h4></li></ul>
         <p>Resolve-se o sistema A·X = I, onde I é a matriz identidade. A solução X será A⁻¹.</p>
